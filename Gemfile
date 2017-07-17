@@ -5,6 +5,20 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+#active admin gem
+gem 'activeadmin', github: 'activeadmin'
+
+#active admin gem additions
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+gem 'ransack', github: 'activerecord-hackery/ransack'
+gem 'draper', '~> 3.0'
+
+
+#active admin skin
+gem 'active_skin'
+
+#devise setup
+gem 'devise'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'
